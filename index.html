@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+
+
+    <style>
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1288px;
+            }
+        }
+
+        .head-text {
+            position: relative;
+            text-align: center;
+            color: white;
+            /* width: 91%;
+      right: 3%; */
+            width: 91%;
+            right: 3%;
+            top: 2%;
+        }
+
+        .shadow-box{
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+            border-radius: 15px;
+        }
+
+        .head-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        .start-img {
+            position: relative;
+            text-align: center;
+            color: white;
+            width: 91%;
+            right: 37%;
+            top: -45px;
+        }
+
+        .patient-img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            /* transform: translate(-50%, -50%); */
+        }
+
+        .recommend-text {
+            position: absolute;
+            text-align: center;
+            color: white;
+            /* width: 91%;
+      right: 36.4%; */
+            top: 61px;
+        }
+
+        .recommend-title {
+            position: absolute;
+            top: 50%;
+            left: 42%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 0.8rem;
+            width: 100%;
+        }
+
+        .custom-features {
+            color: #007830 !important;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+        }
+
+        .custom-main {
+            position: relative;
+            top: -10px;
+        }
+
+        .view-More {
+            font-family: Poppins;
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 15px;
+            text-align: center;
+            color: #007830;
+            display: flex;
+        }
+
+        .view-Wording {
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+            text-align: center;
+            display: flex;
+            color: #007830;
+            position: relative;
+            top: 25px;
+        }
+
+        .Premium-interface {
+            position: relative;
+            text-align: center;
+            color: white;
+            /* width: 91%; */
+        }
+
+        .custom-premium {
+            position: absolute;
+            top: 50%;
+            left: 57%;
+            transform: translate(-50%, -50%);
+        }
+
+        .cover-value {
+            position: absolute;
+            top: 0;
+            left: 19%;
+        }
+
+        .alignment-top {
+            position: relative;
+            bottom: 20px;
+        }
+
+        .r-text,
+        .text-edit {
+            font-family: "Roboto", sans-serif;
+            text-align: left;
+        }
+
+        .rounded-custom {
+            border-radius: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            overflow-x: auto;
+        }
+
+        .r-text,
+        .text-edit {
+            font-family: "Roboto", sans-serif;
+            text-align: left;
+        }
+
+        .text-edit {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            display: flex;
+            margin-bottom: 2px;
+        }
+
+        .r-text {
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.15000000596046448px;
+        }
+
+        .custom-features {
+            color: #007830 !important;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            display: none;
+            float: left;
+            min-width: 10rem;
+            padding: .5rem 0;
+            margin: .125rem 0 0;
+            font-size: 1rem;
+            color: #080808;
+            text-align: left;
+            list-style: none;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, .15);
+            border-radius: .25rem;
+        }
+
+        .cuatom-sdow {
+            box-shadow: none !important;
+            border: none !important;
+            padding: 0 5px !important;
+            font-family: Poppins;
+            font-size: 12px !important;
+            font-weight: 500;
+            line-height: 18px;
+            text-align: center;
+            display: flex !important;
+        }
+
+
+        .card-filter {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: center;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            /* Card background color */
+        }
+
+        .card-filter:nth-child(1) {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .card-filter:nth-child(5) {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        @media (max-width:1024px) {
+            .my-4 {
+                margin-top: 1.5rem !important;
+            }
+        }
+
+        .card {
+            height: 100%;
+        }
+
+        @media (max-width:1024px) and (min-width:992px) {
+            .start-img {
+                top: -33px;
+            }
+        }
+
+        @media (max-width:991px) and (min-width:768px) {
+            .start-img {
+                top: -38px;
+            }
+        }
+
+        @media (max-width:767px) {
+            .start-img {
+                top: -48px;
+            }
+        }
+
+        @media (max-width:452px) {
+            .start-img {
+                top: -42px;
+            }
+        }
+
+        @media (max-width:392px) {
+            .start-img {
+                top: -36px;
+            }
+
+            .sm-rectangle {
+                height: 44px;
+            }
+        }
+
+        @media (max-width:340px) {
+            .start-img {
+                top: -32px;
+            }
+
+            .sm-rectangle {
+                height: 39px;
+            }
+
+            .patient-img {
+                height: 30px;
+            }
+        }
+
+        @media (max-width:1024px) and (min-width:992px) {
+
+            .view-Wording {
+                top: 10px;
+            }
+
+            .sm-rectangle {
+                height: 44px;
+            }
+        }
+
+        @media (max-width:347px) {
+
+            .view-Wording {
+                top: 10px;
+            }
+        }
+
+
+        @media (min-width:280px) {
+            .card {
+                height: 88%;
+            }
+        }
+
+
+        @media (max-width: 425px) {
+            .grid-container {
+                grid-template-columns: repeat(5, minmax(150px, 1fr));
+            }
+        }
+
+        @media (max-width:767px) {
+            .custom-image-size {
+                position: relative;
+                width: 130px;
+                height: 127px;
+            }
+        }
+
+        @media (max-width:375px) {
+            .custom-image-size {
+                position: relative;
+                width: 130px;
+                height: 127px;
+                margin-top: 23px !important;
+            }
+        }
+
+        @media (max-width:320px) {
+            .custom-image-size {
+                position: relative;
+                width: 96px;
+                height: 100px;
+                margin-top: 42px !important;
+            }
+        }
+
+        @media (min-width:992px) and (max-width:1024px) {
+            .custom-image-size {
+                position: relative;
+                width: 100%;
+                height: 139px;
+                /* margin-top: 45px !important; */
+            }
+        }
+
+        @media (min-width:769px) and (max-width:991px) {
+            .custom-image-size {
+                position: relative;
+                /* width: 100%;
+      height: 139px; */
+                /* margin-top: 45px !important; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container container my-3">
+        <div class="card-filter">
+            <label class="text-edit" for="">Self (30 years)</label>
+            <label class="text-edit" for="">Spouse (28 years)</label>
+            <label class="text-edit" for="">Edit
+                <img class="ml-5" src="edit-vector.png" alt="edit" width="13" height="12">
+            </label>
+        </div>
+        <div class="card-filter">
+            <label class="text-edit" for="">City</label>
+            <label class="text-edit" for="">Thane</label>
+            <label class="text-edit" for="">Edit
+                <img class="ml-5" src="edit-vector.png" alt="edit" width="13" height="12">
+            </label>
+        </div>
+        <div class="card-filter">
+            <label class="text-edit" for="">Plan</label>
+            <label class="text-edit" for="">Family Floater</label>
+            <label class="text-edit" for="">Individual</label>
+        </div>
+        <div class="card-filter">
+            <label class="text-edit" for="">Cover Plan</label>
+            <div class="dropdown-center">
+                <button class="btn dropdown-toggle cuatom-sdow mt-3 mb-2 ms-0" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Recommend
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Action two</a></li>
+                    <li><a class="dropdown-item" href="#">Action three</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card-filter">
+            <img class="d-flex mt-2 ms-2" src="Group 1851.png" alt="sort" width="24" height="24">
+            <label class="text-edit mt-1 mb-1" for="">Sort By</label>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12 col-12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="card shadow-box my-3" style="width: 100%;">
+                            <!-- <h5 class="card-title">Card title</h5> -->
+                            <div class="head-text">
+                                <img class="" src="Rectangle 1380.png" alt="" style="width:116%">
+                                <div class="head-title">Affinity Demo GHI</div>
+                            </div>
+                            <div class="start-img">
+                                <img class="sm-rectangle" src="Rectangle 4833.png" alt="">
+                                <img class="patient-img" src="patient 2.png" alt=""
+                                    style="transform: translate(-50%, -50%);">
+                            </div>
+                            <div class="recommend-text">
+                                <img src="Rectangle 4786.png" alt="">
+                                <div class="recommend-title">Recommend</div>
+                            </div>
+
+                            <div class="d-flex my-4">
+                                <div class="card-body p-1 custom-main">
+                                    <h6 class="card-subtitle mb-2 text-body-secondary ml-3 custom-features">Features
+                                    </h6>
+                                    <div class="d-flex">
+                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
+                                        <h6 class="r-text">527- Day Care Procedures Covered.</h6>
+                                    </div>
+                                    <div class="d-flex">
+                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
+                                        <h6 class="r-text">Organ Donor Expenses Covered.</h6>
+                                    </div>
+                                    <div class="d-flex">
+                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
+                                        <h6 class="r-text">Pre & Post Hospitalisation Cover.</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between flex-column">
+                                        <div href="#" class="view-More ml-3">view More Features</div>
+                                        <div href="#" class="view-Wording ms-3">Policy Wording</div>
+                                    </div>
+                                    <!-- <a href="#" class="card-link">Another link</a> -->
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="card-body p-1 custom-main">
+                                        <h6
+                                            class="card-subtitle mb-2 text-body-secondary ml-3 custom-features text-center">
+                                            Premium</h6>
+                                        <div class="Premium-interface text-end">
+                                            <img src="Rectangle 4792.png" alt="">
+                                            <div class="custom-premium">₹500/-</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1 alignment-top">
+                                        <h6
+                                            class="card-subtitle mb-1 mt-1 text-body-secondary ms-2 custom-features text-center">
+                                            Cover</h6>
+                                        <div class="Premium-interface text-end">
+                                            <img src="Rectangle 4792.png" alt="">
+                                            <div class="cover-value">₹2 Lac/-</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1">
+                                        <!-- <h6 class="card-subtitle mb-2 text-body-secondary ms-2 custom-features text-center">Cover</h6> -->
+                                        <div class="Premium-interface text-end">
+                                            <img src="Group 2032.png" alt="">
+                                            <!-- <div class="cover-value">₹2 Lac/-</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="card shadow-box my-3" style="width: 100%;">
+                            <!-- <h5 class="card-title">Card title</h5> -->
+                            <div class="head-text">
+                                <img class="" src="Rectangle 1380.png" alt="" style="width:116%">
+                                <div class="head-title">Affinity Demo GHI</div>
+                            </div>
+                            <div class="start-img">
+                                <img class="sm-rectangle" src="Rectangle 4833.png" alt="">
+                                <img class="patient-img" src="patient 2.png" alt=""
+                                    style="transform: translate(-50%, -50%);">
+                            </div>
+                            <div class="recommend-text">
+                                <img src="Rectangle 4786.png" alt="">
+                                <div class="recommend-title">Recommend</div>
+                            </div>
+
+                            <div class="d-flex my-4">
+                                <div class="card-body p-1 custom-main">
+                                    <h6 class="card-subtitle mb-2 text-body-secondary ml-3 custom-features">Features
+                                    </h6>
+                                    <div class="d-flex">
+                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
+                                        <h6 class="r-text">527- Day Care Procedures Covered.</h6>
+                                    </div>
+                                    <div class="d-flex">
+                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
+                                        <h6 class="r-text">Organ Donor Expenses Covered.</h6>
+                                    </div>
+                                    <div class="d-flex">
+                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
+                                        <h6 class="r-text">Pre & Post Hospitalisation Cover.</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between flex-column">
+                                        <div href="#" class="view-More ml-3">view More Features</div>
+                                        <div href="#" class="view-Wording ms-3">Policy Wording</div>
+                                    </div>
+                                    <!-- <a href="#" class="card-link">Another link</a> -->
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="card-body p-1 custom-main">
+                                        <h6
+                                            class="card-subtitle mb-2 text-body-secondary ms-2 custom-features text-center">
+                                            Premium</h6>
+                                        <div class="Premium-interface text-end">
+                                            <img src="Rectangle 4792.png" alt="">
+                                            <div class="custom-premium">₹500/-</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1 alignment-top">
+                                        <h6
+                                            class="card-subtitle mb-1 mt-1 text-body-secondary ms-2 custom-features text-center">
+                                            Cover</h6>
+                                        <div class="Premium-interface text-end">
+                                            <img src="Rectangle 4792.png" alt="">
+                                            <div class="cover-value">₹2 Lac/-</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1">
+                                        <!-- <h6 class="card-subtitle mb-2 text-body-secondary ms-2 custom-features text-center">Cover</h6> -->
+                                        <div class="Premium-interface text-end">
+                                            <img src="Group 2032.png" alt="">
+                                            <!-- <div class="cover-value">₹2 Lac/-</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 my-2">
+                        <div class="card shadow-box my-3" style="width: 100%;">
+                            <!-- <h5 class="card-title">Card title</h5> -->
+                            <div class="head-text">
+                                <img class="" src="Rectangle 1380.png" alt="" style="width:116%">
+                                <div class="head-title">Affinity Demo GHI</div>
+                            </div>
+                            <div class="start-img">
+                                <img class="sm-rectangle" src="Rectangle 4833.png" alt="">
+                                <img class="patient-img" src="patient 2.png" alt=""
+                                    style="transform: translate(-50%, -50%);">
+                            </div>
+                            <div class="recommend-text">
+                                <img src="Rectangle 4786.png" alt="">
+                                <div class="recommend-title">Recommend</div>
+                            </div>
+
+                            <div class="d-flex my-4">
+                                <div class="card-body p-1 custom-main">
+                                    <h6 class="card-subtitle mb-2 text-body-secondary ml-3 custom-features">Features
+                                    </h6>
+                                    <div class="d-flex">
+                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
+                                        <h6 class="r-text">527- Day Care Procedures Covered.</h6>
+                                    </div>
+                                    <div class="d-flex">
+                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
+                                        <h6 class="r-text">Organ Donor Expenses Covered.</h6>
+                                    </div>
+                                    <div class="d-flex">
+                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
+                                        <h6 class="r-text">Pre & Post Hospitalisation Cover.</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between flex-column">
+                                        <div href="#" class="view-More ml-3">view More Features</div>
+                                        <div href="#" class="view-Wording ms-3">Policy Wording</div>
+                                    </div>
+                                    <!-- <a href="#" class="card-link">Another link</a> -->
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="card-body p-1 custom-main">
+                                        <h6
+                                            class="card-subtitle mb-2 text-body-secondary ms-2 custom-features text-center">
+                                            Premium</h6>
+                                        <div class="Premium-interface text-end">
+                                            <img src="Rectangle 4792.png" alt="">
+                                            <div class="custom-premium">₹500/-</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1 alignment-top">
+                                        <h6
+                                            class="card-subtitle mb-1 mt-1 text-body-secondary ms-2 custom-features text-center">
+                                            Cover</h6>
+                                        <div class="Premium-interface text-end">
+                                            <img src="Rectangle 4792.png" alt="">
+                                            <div class="cover-value">₹2 Lac/-</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1">
+                                        <!-- <h6 class="card-subtitle mb-2 text-body-secondary ms-2 custom-features text-center">Cover</h6> -->
+                                        <div class="Premium-interface text-end">
+                                            <img src="Group 2032.png" alt="">
+                                            <!-- <div class="cover-value">₹2 Lac/-</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 my-2">
+                        <div class="card shadow-box my-3" style="width: 100%;">
+                            <!-- <h5 class="card-title">Card title</h5> -->
+                            <div class="head-text">
+                                <img class="" src="Rectangle 1380.png" alt="" style="width:116%">
+                                <div class="head-title">Affinity Demo GHI</div>
+                            </div>
+                            <div class="start-img">
+                                <img class="sm-rectangle" src="Rectangle 4833.png" alt="">
+                                <img class="patient-img" src="patient 2.png" alt=""
+                                    style="transform: translate(-50%, -50%);">
+                            </div>
+                            <div class="recommend-text">
+                                <img src="Rectangle 4786.png" alt="">
+                                <div class="recommend-title">Recommend</div>
+                            </div>
+
+                            <div class="d-flex my-4">
+                                <div class="card-body p-1 custom-main">
+                                    <h6 class="card-subtitle mb-2 text-body-secondary ml-3 custom-features">Features
+                                    </h6>
+                                    <div class="d-flex">
+                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
+                                        <h6 class="r-text">527- Day Care Procedures Covered.</h6>
+                                    </div>
+                                    <div class="d-flex">
+                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
+                                        <h6 class="r-text">Organ Donor Expenses Covered.</h6>
+                                    </div>
+                                    <div class="d-flex">
+                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
+                                        <h6 class="r-text">Pre & Post Hospitalisation Cover.</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between flex-column">
+                                        <div href="#" class="view-More ml-3">view More Features</div>
+                                        <div href="#" class="view-Wording ms-3">Policy Wording</div>
+                                    </div>
+                                    <!-- <a href="#" class="card-link">Another link</a> -->
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="card-body p-1 custom-main">
+                                        <h6
+                                            class="card-subtitle mb-2 text-body-secondary ms-2 custom-features text-center">
+                                            Premium</h6>
+                                        <div class="Premium-interface text-end">
+                                            <img src="Rectangle 4792.png" alt="">
+                                            <div class="custom-premium">₹500/-</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1 alignment-top">
+                                        <h6
+                                            class="card-subtitle mb-1 mt-1 text-body-secondary ms-2 custom-features text-center">
+                                            Cover</h6>
+                                        <div class="Premium-interface text-end">
+                                            <img src="Rectangle 4792.png" alt="">
+                                            <div class="cover-value">₹2 Lac/-</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-1">
+                                        <!-- <h6 class="card-subtitle mb-2 text-body-secondary ms-2 custom-features text-center">Cover</h6> -->
+                                        <div class="Premium-interface text-end">
+                                            <img src="Group 2032.png" alt="">
+                                            <!-- <div class="cover-value">₹2 Lac/-</div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-12 custom-side-view">
+                <div class="col-lg-12 col-md-12">
+                    <div class="d-flex w-100 rounded-custom justify-content-center align-items-center my-3"
+                        style="background: linear-gradient(112.75deg, #005E92 2.53%, rgba(0, 74, 115, 0.9) 68.41%, rgba(0, 86, 134, 0.81) 98.01%);">
+                        <div class="p-2 my-5 text-white d-flex justify-content-center align-items-center">All Rounder
+                            Health
+                            insurance covers, by Exclusively for you</div>
+
+                        <img class="my-3 custom-image-size d-flex justify-content-center align-items-center"
+                            src="removal 1.png" alt="">
+
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 my-2">
+                    <div class="d-flex w-100 rounded-custom align-items-center flex-column justify-content-between"
+                        style="border: 1px solid #969696; height:55%">
+                        <div class="p-2 text-black d-flex align-items-center text-center">Help</div>
+                        <div class="p-2 text-black d-flex align-items-center text-center">All Rounder Health insurance
+                            covers, by
+                            Exclusively for you</div>
+
+                        <img class="custom-image-size d-flex align-items-center" src="13184991.png" alt="">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>
