@@ -27,354 +27,624 @@
 
 <body>
     <div class="grid-container container my-3">
-        <div class="card-filter">
-            <label class="text-edit" for="">Self (30 years)</label>
-            <label class="text-edit" for="">Spouse (28 years)</label>
-            <label class="text-edit" for="">Edit
-                <img class="ml-5" src="edit-vector.png" alt="edit" width="13" height="12">
-            </label>
-        </div>
-        <div class="card-filter">
-            <label class="text-edit" for="">City</label>
-            <label class="text-edit" for="">Thane</label>
-            <label class="text-edit" for="">Edit
-                <img class="ml-5" src="edit-vector.png" alt="edit" width="13" height="12">
-            </label>
-        </div>
-        <div class="card-filter">
-            <label class="text-edit" for="">Plan</label>
-            <label class="text-edit" for="">Family Floater</label>
-            <label class="text-edit" for="">Individual</label>
-        </div>
-        <div class="card-filter">
-            <label class="text-edit" for="">Cover Plan</label>
-            <div class="dropdown-center">
-                <button class="btn dropdown-toggle cuatom-sdow mt-3 mb-2 ms-0" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Recommend
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Action two</a></li>
-                    <li><a class="dropdown-item" href="#">Action three</a></li>
-                </ul>
+    <div class="card-filter">
+      <label class="text-edit" for="">Self (30 years)</label>
+      <label class="text-edit" for="">Spouse (28 years)</label>
+      <label class="text-edit" for="">Edit
+        <img class="ml-5" src="assets/images/edit-vector.png" alt="edit" width="13" height="12" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">
+      </label>
+    </div>
+    <div class="card-filter">
+      <label class="text-edit" for="">Cover Plan</label>
+      <div class="dropdown-end">
+        <button class="btn dropdown-toggle cuatom-sdow mt-3 mb-2 ms-0 bg-transparent" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Recommend
+        </button>
+        <ul class="dropdown-menu" data-popper-placement="bottom-end">
+          <div class="card-header w-100 p-2">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5>Choose your Cover Range</h5>
+              <button type="button" class="btn-close cover-button" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-        </div>
-        <div class="card-filter">
-            <img class="d-flex mt-2 ms-2" src="Group 1851.png" alt="sort" width="24" height="24">
-            <label class="text-edit mt-1 mb-1" for="">Sort By</label>
-        </div>
+            <!-- <span class="multi_text">Choose your Cover Range</span> -->
+            <hr>
+
+            <div class="row">
+              <div class="column col-md-6">
+                <div class="card d-flex justify-content-between flex-row p-2 align-items-center custom-card-cover">
+                  <label for="html">All</label>
+                  <input type="radio" id="html" name="fav_language" value="HTML">
+                </div>
+              </div>
+
+              <div class="column col-md-6">
+                <div class="card d-flex justify-content-between flex-row p-2 align-items-center custom-card-cover">
+                  <label for="html">1 to 3 Lacs</label>
+                  <input type="radio" id="html" name="fav_language" value="HTML">
+                </div>
+              </div>
+
+              <div class="column col-md-6">
+                <div class="card d-flex justify-content-between flex-row p-2 align-items-center custom-card-cover">
+                  <label for="html">3 to 5 Lacs</label>
+                  <input type="radio" id="html" name="fav_language" value="HTML">
+                </div>
+              </div>
+
+              <div class="column col-md-6">
+                <div class="card d-flex justify-content-between flex-row p-2 align-items-center custom-card-cover">
+                  <label for="html">5 to 10 Lacs</label>
+                  <input type="radio" id="html" name="fav_language" value="HTML">
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-12 col-12">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="card shadow-box my-3" style="width: 100%;">
-                            <!-- <h5 class="card-title">Card title</h5> -->
-                            <div class="head-text">
-                                <img class="" src="Rectangle 1380.png" alt="" style="width:116%">
-                                <div class="head-title">Affinity Demo GHI</div>
-                            </div>
-                            <div class="start-img">
-                                <img class="sm-rectangle" src="Rectangle 4833.png" alt="">
-                                <img class="patient-img" src="patient 2.png" alt=""
-                                    style="transform: translate(-50%, -50%);">
-                            </div>
-                            <div class="recommend-text">
-                                <img src="Rectangle 4786.png" alt="">
-                                <div class="recommend-title">Recommend</div>
-                            </div>
+    <div class="card-filter">
+      <label class="text-edit" for="">Plan</label>
+      <label class="text-edit" for="">Family Floater</label>
+      <label class="text-edit" for="">Individual</label>
+    </div>
 
-                            <div class="d-flex my-4">
-                                <div class="card-body p-1 custom-main">
-                                    <h6 class="card-subtitle mb-2 text-body-secondary ml-3 custom-features">Features
-                                    </h6>
-                                    <div class="d-flex">
-                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
-                                        <h6 class="r-text">527- Day Care Procedures Covered.</h6>
-                                    </div>
-                                    <div class="d-flex">
-                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
-                                        <h6 class="r-text">Organ Donor Expenses Covered.</h6>
-                                    </div>
-                                    <div class="d-flex">
-                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
-                                        <h6 class="r-text">Pre & Post Hospitalisation Cover.</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between flex-column">
-                                        <div href="#" class="view-More ml-3">view More Features</div>
-                                        <div href="#" class="view-Wording ms-3">Policy Wording</div>
-                                    </div>
-                                    <!-- <a href="#" class="card-link">Another link</a> -->
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <div class="card-body p-1 custom-main">
-                                        <h6
-                                            class="card-subtitle mb-2 text-body-secondary ml-3 custom-features text-center">
-                                            Premium</h6>
-                                        <div class="Premium-interface text-end">
-                                            <img src="Rectangle 4792.png" alt="">
-                                            <div class="custom-premium">₹500/-</div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-1 alignment-top">
-                                        <h6
-                                            class="card-subtitle mb-1 mt-1 text-body-secondary ms-2 custom-features text-center">
-                                            Cover</h6>
-                                        <div class="Premium-interface text-end">
-                                            <img src="Rectangle 4792.png" alt="">
-                                            <div class="cover-value">₹2 Lac/-</div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-1">
-                                        <!-- <h6 class="card-subtitle mb-2 text-body-secondary ms-2 custom-features text-center">Cover</h6> -->
-                                        <div class="Premium-interface text-end">
-                                            <img src="Group 2032.png" alt="">
-                                            <!-- <div class="cover-value">₹2 Lac/-</div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="card shadow-box my-3" style="width: 100%;">
-                            <!-- <h5 class="card-title">Card title</h5> -->
-                            <div class="head-text">
-                                <img class="" src="Rectangle 1380.png" alt="" style="width:116%">
-                                <div class="head-title">Affinity Demo GHI</div>
-                            </div>
-                            <div class="start-img">
-                                <img class="sm-rectangle" src="Rectangle 4833.png" alt="">
-                                <img class="patient-img" src="patient 2.png" alt=""
-                                    style="transform: translate(-50%, -50%);">
-                            </div>
-                            <div class="recommend-text">
-                                <img src="Rectangle 4786.png" alt="">
-                                <div class="recommend-title">Recommend</div>
-                            </div>
+    <div class="card-filter">
+      <img class="d-flex mt-2 ms-2" src="assets\images\Group 1851.png" alt="sort" width="24" height="24">
+      <label class="text-edit mt-1 mb-1" for="">Sort By</label>
+    </div>
+  </div>
 
-                            <div class="d-flex my-4">
-                                <div class="card-body p-1 custom-main">
-                                    <h6 class="card-subtitle mb-2 text-body-secondary ml-3 custom-features">Features
-                                    </h6>
-                                    <div class="d-flex">
-                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
-                                        <h6 class="r-text">527- Day Care Procedures Covered.</h6>
-                                    </div>
-                                    <div class="d-flex">
-                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
-                                        <h6 class="r-text">Organ Donor Expenses Covered.</h6>
-                                    </div>
-                                    <div class="d-flex">
-                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
-                                        <h6 class="r-text">Pre & Post Hospitalisation Cover.</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between flex-column">
-                                        <div href="#" class="view-More ml-3">view More Features</div>
-                                        <div href="#" class="view-Wording ms-3">Policy Wording</div>
-                                    </div>
-                                    <!-- <a href="#" class="card-link">Another link</a> -->
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <div class="card-body p-1 custom-main">
-                                        <h6
-                                            class="card-subtitle mb-2 text-body-secondary ms-2 custom-features text-center">
-                                            Premium</h6>
-                                        <div class="Premium-interface text-end">
-                                            <img src="Rectangle 4792.png" alt="">
-                                            <div class="custom-premium">₹500/-</div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-1 alignment-top">
-                                        <h6
-                                            class="card-subtitle mb-1 mt-1 text-body-secondary ms-2 custom-features text-center">
-                                            Cover</h6>
-                                        <div class="Premium-interface text-end">
-                                            <img src="Rectangle 4792.png" alt="">
-                                            <div class="cover-value">₹2 Lac/-</div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-1">
-                                        <!-- <h6 class="card-subtitle mb-2 text-body-secondary ms-2 custom-features text-center">Cover</h6> -->
-                                        <div class="Premium-interface text-end">
-                                            <img src="Group 2032.png" alt="">
-                                            <!-- <div class="cover-value">₹2 Lac/-</div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 my-2">
-                        <div class="card shadow-box my-3" style="width: 100%;">
-                            <!-- <h5 class="card-title">Card title</h5> -->
-                            <div class="head-text">
-                                <img class="" src="Rectangle 1380.png" alt="" style="width:116%">
-                                <div class="head-title">Affinity Demo GHI</div>
-                            </div>
-                            <div class="start-img">
-                                <img class="sm-rectangle" src="Rectangle 4833.png" alt="">
-                                <img class="patient-img" src="patient 2.png" alt=""
-                                    style="transform: translate(-50%, -50%);">
-                            </div>
-                            <div class="recommend-text">
-                                <img src="Rectangle 4786.png" alt="">
-                                <div class="recommend-title">Recommend</div>
-                            </div>
+  <!-- modal edit -->
 
-                            <div class="d-flex my-4">
-                                <div class="card-body p-1 custom-main">
-                                    <h6 class="card-subtitle mb-2 text-body-secondary ml-3 custom-features">Features
-                                    </h6>
-                                    <div class="d-flex">
-                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
-                                        <h6 class="r-text">527- Day Care Procedures Covered.</h6>
-                                    </div>
-                                    <div class="d-flex">
-                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
-                                        <h6 class="r-text">Organ Donor Expenses Covered.</h6>
-                                    </div>
-                                    <div class="d-flex">
-                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
-                                        <h6 class="r-text">Pre & Post Hospitalisation Cover.</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between flex-column">
-                                        <div href="#" class="view-More ml-3">view More Features</div>
-                                        <div href="#" class="view-Wording ms-3">Policy Wording</div>
-                                    </div>
-                                    <!-- <a href="#" class="card-link">Another link</a> -->
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <div class="card-body p-1 custom-main">
-                                        <h6
-                                            class="card-subtitle mb-2 text-body-secondary ms-2 custom-features text-center">
-                                            Premium</h6>
-                                        <div class="Premium-interface text-end">
-                                            <img src="Rectangle 4792.png" alt="">
-                                            <div class="custom-premium">₹500/-</div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-1 alignment-top">
-                                        <h6
-                                            class="card-subtitle mb-1 mt-1 text-body-secondary ms-2 custom-features text-center">
-                                            Cover</h6>
-                                        <div class="Premium-interface text-end">
-                                            <img src="Rectangle 4792.png" alt="">
-                                            <div class="cover-value">₹2 Lac/-</div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-1">
-                                        <!-- <h6 class="card-subtitle mb-2 text-body-secondary ms-2 custom-features text-center">Cover</h6> -->
-                                        <div class="Premium-interface text-end">
-                                            <img src="Group 2032.png" alt="">
-                                            <!-- <div class="cover-value">₹2 Lac/-</div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 my-2">
-                        <div class="card shadow-box my-3" style="width: 100%;">
-                            <!-- <h5 class="card-title">Card title</h5> -->
-                            <div class="head-text">
-                                <img class="" src="Rectangle 1380.png" alt="" style="width:116%">
-                                <div class="head-title">Affinity Demo GHI</div>
-                            </div>
-                            <div class="start-img">
-                                <img class="sm-rectangle" src="Rectangle 4833.png" alt="">
-                                <img class="patient-img" src="patient 2.png" alt=""
-                                    style="transform: translate(-50%, -50%);">
-                            </div>
-                            <div class="recommend-text">
-                                <img src="Rectangle 4786.png" alt="">
-                                <div class="recommend-title">Recommend</div>
-                            </div>
-
-                            <div class="d-flex my-4">
-                                <div class="card-body p-1 custom-main">
-                                    <h6 class="card-subtitle mb-2 text-body-secondary ml-3 custom-features">Features
-                                    </h6>
-                                    <div class="d-flex">
-                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
-                                        <h6 class="r-text">527- Day Care Procedures Covered.</h6>
-                                    </div>
-                                    <div class="d-flex">
-                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
-                                        <h6 class="r-text">Organ Donor Expenses Covered.</h6>
-                                    </div>
-                                    <div class="d-flex">
-                                        <img class="l-img mr-2" src="correct-img.png" height="10" width="10">
-                                        <h6 class="r-text">Pre & Post Hospitalisation Cover.</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between flex-column">
-                                        <div href="#" class="view-More ml-3">view More Features</div>
-                                        <div href="#" class="view-Wording ms-3">Policy Wording</div>
-                                    </div>
-                                    <!-- <a href="#" class="card-link">Another link</a> -->
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <div class="card-body p-1 custom-main">
-                                        <h6
-                                            class="card-subtitle mb-2 text-body-secondary ms-2 custom-features text-center">
-                                            Premium</h6>
-                                        <div class="Premium-interface text-end">
-                                            <img src="Rectangle 4792.png" alt="">
-                                            <div class="custom-premium">₹500/-</div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-1 alignment-top">
-                                        <h6
-                                            class="card-subtitle mb-1 mt-1 text-body-secondary ms-2 custom-features text-center">
-                                            Cover</h6>
-                                        <div class="Premium-interface text-end">
-                                            <img src="Rectangle 4792.png" alt="">
-                                            <div class="cover-value">₹2 Lac/-</div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body p-1">
-                                        <!-- <h6 class="card-subtitle mb-2 text-body-secondary ms-2 custom-features text-center">Cover</h6> -->
-                                        <div class="Premium-interface text-end">
-                                            <img src="Group 2032.png" alt="">
-                                            <!-- <div class="cover-value">₹2 Lac/-</div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="box-container">
+            <div class="d-flex w-100 mb-3">
+              <div class="field_container col-md-8">
+                <div class="checkbox-family"><label><input type="checkbox"> <span> Self</span></label></div>
+              </div>
+              <div class="box_family col-md-4"><select class="font_light w-100">
+                  <option value="-1">Select age</option>
+                  <option value="18">18 yr</option>
+                  <option value="19">19 yr</option>
+                  <option value="20">20 yr</option>
+                  <option value="21">21 yr</option>
+                  <option value="22">22 yr</option>
+                  <option value="23">23 yr</option>
+                  <option value="24">24 yr</option>
+                  <option value="25">25 yr</option>
+                  <option value="26">26 yr</option>
+                  <option value="27">27 yr</option>
+                  <option value="28">28 yr</option>
+                  <option value="29">29 yr</option>
+                  <option value="30">30 yr</option>
+                  <option value="31">31 yr</option>
+                  <option value="32">32 yr</option>
+                  <option value="33">33 yr</option>
+                  <option value="34">34 yr</option>
+                  <option value="35">35 yr</option>
+                  <option value="36">36 yr</option>
+                  <option value="37">37 yr</option>
+                  <option value="38">38 yr</option>
+                  <option value="39">39 yr</option>
+                  <option value="40">40 yr</option>
+                  <option value="41">41 yr</option>
+                  <option value="42">42 yr</option>
+                  <option value="43">43 yr</option>
+                  <option value="44">44 yr</option>
+                  <option value="45">45 yr</option>
+                  <option value="46">46 yr</option>
+                  <option value="47">47 yr</option>
+                  <option value="48">48 yr</option>
+                  <option value="49">49 yr</option>
+                  <option value="50">50 yr</option>
+                  <option value="51">51 yr</option>
+                  <option value="52">52 yr</option>
+                  <option value="53">53 yr</option>
+                  <option value="54">54 yr</option>
+                  <option value="55">55 yr</option>
+                  <option value="56">56 yr</option>
+                  <option value="57">57 yr</option>
+                  <option value="58">58 yr</option>
+                  <option value="59">59 yr</option>
+                  <option value="60">60 yr</option>
+                  <option value="61">61 yr</option>
+                  <option value="62">62 yr</option>
+                  <option value="63">63 yr</option>
+                  <option value="64">64 yr</option>
+                  <option value="65">65 yr</option>
+                  <option value="66">66 yr</option>
+                  <option value="67">67 yr</option>
+                  <option value="68">68 yr</option>
+                  <option value="69">69 yr</option>
+                  <option value="70">70 yr</option>
+                  <option value="71">71 yr</option>
+                  <option value="72">72 yr</option>
+                  <option value="73">73 yr</option>
+                  <option value="74">74 yr</option>
+                  <option value="75">75 yr</option>
+                  <option value="76">76 yr</option>
+                  <option value="77">77 yr</option>
+                  <option value="78">78 yr</option>
+                  <option value="79">79 yr</option>
+                  <option value="80">80 yr</option>
+                  <option value="81">81 yr</option>
+                  <option value="82">82 yr</option>
+                  <option value="83">83 yr</option>
+                  <option value="84">84 yr</option>
+                  <option value="85">85 yr</option>
+                  <option value="86">86 yr</option>
+                  <option value="87">87 yr</option>
+                  <option value="88">88 yr</option>
+                  <option value="89">89 yr</option>
+                  <option value="90">90 yr</option>
+                  <option value="91">91 yr</option>
+                  <option value="92">92 yr</option>
+                  <option value="93">93 yr</option>
+                  <option value="94">94 yr</option>
+                  <option value="95">95 yr</option>
+                  <option value="96">96 yr</option>
+                  <option value="97">97 yr</option>
+                  <option value="98">98 yr</option>
+                  <option value="99">99 yr</option>
+                  <option value="100">100 yr</option>
+                </select></div>
             </div>
-            <div class="col-lg-4 col-md-12 col-12 custom-side-view">
-                <div class="col-lg-12 col-md-12">
-                    <div class="d-flex w-100 rounded-custom justify-content-center align-items-center my-3"
-                        style="background: linear-gradient(112.75deg, #005E92 2.53%, rgba(0, 74, 115, 0.9) 68.41%, rgba(0, 86, 134, 0.81) 98.01%);">
-                        <div class="p-2 my-5 text-white d-flex justify-content-center align-items-center">All Rounder
-                            Health
-                            insurance covers, by Exclusively for you</div>
+            <div class="d-flex w-100 mb-3">
+              <div class="field_container col-md-8">
+                <div class="checkbox-family"><label><input type="checkbox"> <span> Spouse</span></label></div>
+              </div>
+              <div class="box_family col-md-4"><select class="font_light w-100">
+                  <option value="-1">Select age</option>
+                  <option value="18">18 yr</option>
+                  <option value="19">19 yr</option>
+                  <option value="20">20 yr</option>
+                  <option value="21">21 yr</option>
+                  <option value="22">22 yr</option>
+                  <option value="23">23 yr</option>
+                  <option value="24">24 yr</option>
+                  <option value="25">25 yr</option>
+                  <option value="26">26 yr</option>
+                  <option value="27">27 yr</option>
+                  <option value="28">28 yr</option>
+                  <option value="29">29 yr</option>
+                  <option value="30">30 yr</option>
+                  <option value="31">31 yr</option>
+                  <option value="32">32 yr</option>
+                  <option value="33">33 yr</option>
+                  <option value="34">34 yr</option>
+                  <option value="35">35 yr</option>
+                  <option value="36">36 yr</option>
+                  <option value="37">37 yr</option>
+                  <option value="38">38 yr</option>
+                  <option value="39">39 yr</option>
+                  <option value="40">40 yr</option>
+                  <option value="41">41 yr</option>
+                  <option value="42">42 yr</option>
+                  <option value="43">43 yr</option>
+                  <option value="44">44 yr</option>
+                  <option value="45">45 yr</option>
+                  <option value="46">46 yr</option>
+                  <option value="47">47 yr</option>
+                  <option value="48">48 yr</option>
+                  <option value="49">49 yr</option>
+                  <option value="50">50 yr</option>
+                  <option value="51">51 yr</option>
+                  <option value="52">52 yr</option>
+                  <option value="53">53 yr</option>
+                  <option value="54">54 yr</option>
+                  <option value="55">55 yr</option>
+                  <option value="56">56 yr</option>
+                  <option value="57">57 yr</option>
+                  <option value="58">58 yr</option>
+                  <option value="59">59 yr</option>
+                  <option value="60">60 yr</option>
+                  <option value="61">61 yr</option>
+                  <option value="62">62 yr</option>
+                  <option value="63">63 yr</option>
+                  <option value="64">64 yr</option>
+                  <option value="65">65 yr</option>
+                  <option value="66">66 yr</option>
+                  <option value="67">67 yr</option>
+                  <option value="68">68 yr</option>
+                  <option value="69">69 yr</option>
+                  <option value="70">70 yr</option>
+                  <option value="71">71 yr</option>
+                  <option value="72">72 yr</option>
+                  <option value="73">73 yr</option>
+                  <option value="74">74 yr</option>
+                  <option value="75">75 yr</option>
+                  <option value="76">76 yr</option>
+                  <option value="77">77 yr</option>
+                  <option value="78">78 yr</option>
+                  <option value="79">79 yr</option>
+                  <option value="80">80 yr</option>
+                  <option value="81">81 yr</option>
+                  <option value="82">82 yr</option>
+                  <option value="83">83 yr</option>
+                  <option value="84">84 yr</option>
+                  <option value="85">85 yr</option>
+                  <option value="86">86 yr</option>
+                  <option value="87">87 yr</option>
+                  <option value="88">88 yr</option>
+                  <option value="89">89 yr</option>
+                  <option value="90">90 yr</option>
+                  <option value="91">91 yr</option>
+                  <option value="92">92 yr</option>
+                  <option value="93">93 yr</option>
+                  <option value="94">94 yr</option>
+                  <option value="95">95 yr</option>
+                  <option value="96">96 yr</option>
+                  <option value="97">97 yr</option>
+                  <option value="98">98 yr</option>
+                  <option value="99">99 yr</option>
+                  <option value="100">100 yr</option>
+                </select></div>
+            </div>
+            <div class="d-block">
+              <div class="field_container col-md-12 kids">
+                <div class="checkbox-family"><label><input type="checkbox"> <span> Chlid</span></label></div>
+              </div>
+              <div class="checklist_son radio_kids"><label><span class="circle_kids">-</span></label>
+                <div class="input_kid mx-1">1 </div><label class="click_add_2"><span
+                    class="circle_kids">+</span></label>
+              </div>
+              <div class="kids_box-container">
+                <div class="box_family relationship_dd"><select>
+                    <option value="">Relationship</option>
+                    <option value="8">Son</option>
+                    <option value="9">Daughter</option>
+                  </select></div>
+                <div class="box_family"><select>
+                    <option value="-1">Select age</option>
+                    <option value="-2">17-90 Days</option>
+                    <option value="0">3-12 months</option>
+                    <option value="1">1 yr</option>
+                    <option value="2">2 yr</option>
+                    <option value="3">3 yr</option>
+                    <option value="4">4 yr</option>
+                    <option value="5">5 yr</option>
+                    <option value="6">6 yr</option>
+                    <option value="7">7 yr</option>
+                    <option value="8">8 yr</option>
+                    <option value="9">9 yr</option>
+                    <option value="10">10 yr</option>
+                    <option value="11">11 yr</option>
+                    <option value="12">12 yr</option>
+                    <option value="13">13 yr</option>
+                    <option value="14">14 yr</option>
+                    <option value="15">15 yr</option>
+                    <option value="16">16 yr</option>
+                    <option value="17">17 yr</option>
+                    <option value="18">18 yr</option>
+                    <option value="19">19 yr</option>
+                    <option value="20">20 yr</option>
+                    <option value="21">21 yr</option>
+                    <option value="22">22 yr</option>
+                    <option value="23">23 yr</option>
+                    <option value="24">24 yr</option>
+                    <option value="25">25 yr</option>
+                    <option value="26">26 yr</option>
+                    <option value="27">27 yr</option>
+                    <option value="28">28 yr</option>
+                    <option value="29">29 yr</option>
+                    <option value="30">30 yr</option>
+                  </select></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-                        <img class="my-3 custom-image-size d-flex justify-content-center align-items-center"
-                            src="removal 1.png" alt="">
+  <!-- edir modal end -->
 
-                    </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-12 col-12">
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="card shadow-box my-3" style="width: 100%;">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <div class="head-text">
+                <img class="" src="assets/images/Rectangle 1380.png" alt="" style="width:116%">
+                <div class="head-title">Affinity Demo GHI</div>
+              </div>
+              <div class="start-img">
+                <img class="sm-rectangle" src="assets/images/Rectangle 4833.png" alt="">
+                <img class="patient-img" src="assets/images/patient 2.png" alt=""
+                  style="transform: translate(-50%, -50%);">
+              </div>
+              <div class="recommend-text">
+                <img src="assets/images/Rectangle 4786.png" alt="">
+                <div class="recommend-title">Recommend</div>
+              </div>
+
+              <div class="d-flex my-4">
+                <div class="card-body p-1 custom-main">
+                  <h6 class="card-subtitle mb-2 text-body-secondary ml-3 custom-features">Features</h6>
+                  <div class="d-flex">
+                    <img class="l-img mr-2" src="assets/images/correct-img.png" height="10" width="10">
+                    <h6 class="r-text">527- Day Care Procedures Covered.</h6>
+                  </div>
+                  <div class="d-flex">
+                    <img class="l-img mr-2" src="assets/images/correct-img.png" height="10" width="10">
+                    <h6 class="r-text">Organ Donor Expenses Covered.</h6>
+                  </div>
+                  <div class="d-flex">
+                    <img class="l-img mr-2" src="assets/images/correct-img.png" height="10" width="10">
+                    <h6 class="r-text">Pre & Post Hospitalisation Cover.</h6>
+                  </div>
+                  <div class="d-flex justify-content-between flex-column">
+                    <div href="#" class="view-More ml-3">view More Features</div>
+                    <div href="#" class="view-Wording ms-3">Policy Wording</div>
+                  </div>
+                  <!-- <a href="#" class="card-link">Another link</a> -->
                 </div>
-                <div class="col-lg-12 col-md-12 my-2">
-                    <div class="d-flex w-100 rounded-custom align-items-center flex-column justify-content-between"
-                        style="border: 1px solid #969696; height:55%">
-                        <div class="p-2 text-black d-flex align-items-center text-center">Help</div>
-                        <div class="p-2 text-black d-flex align-items-center text-center">All Rounder Health insurance
-                            covers, by
-                            Exclusively for you</div>
-
-                        <img class="custom-image-size d-flex align-items-center" src="13184991.png" alt="">
-
+                <div class="d-flex flex-column">
+                  <div class="card-body p-1 custom-main">
+                    <h6 class="card-subtitle mb-2 text-body-secondary ml-3 custom-features text-center">Premium</h6>
+                    <div class="Premium-interface text-end">
+                      <img src="assets/images/Rectangle 4792.png" alt="">
+                      <div class="custom-premium">₹500/-</div>
                     </div>
+                  </div>
+                  <div class="card-body p-1 alignment-top">
+                    <h6 class="card-subtitle mb-1 mt-1 text-body-secondary ms-2 custom-features text-center">Cover</h6>
+                    <div class="Premium-interface text-end">
+                      <img src="assets/images/Rectangle 4792.png" alt="">
+                      <div class="cover-value">₹2 Lac/-</div>
+                    </div>
+                  </div>
+                  <div class="card-body p-1">
+                    <!-- <h6 class="card-subtitle mb-2 text-body-secondary ms-2 custom-features text-center">Cover</h6> -->
+                    <div class="Premium-interface text-end">
+                      <img src="assets/images/Group 2032.png" alt="">
+                      <!-- <div class="cover-value">₹2 Lac/-</div> -->
+                    </div>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="card shadow-box my-3" style="width: 100%;">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <div class="head-text">
+                <img class="" src="assets/images/Rectangle 1380.png" alt="" style="width:116%">
+                <div class="head-title">Affinity Demo GHI</div>
+              </div>
+              <div class="start-img">
+                <img class="sm-rectangle" src="assets/images/Rectangle 4833.png" alt="">
+                <img class="patient-img" src="assets/images/patient 2.png" alt=""
+                  style="transform: translate(-50%, -50%);">
+              </div>
+              <div class="recommend-text">
+                <img src="assets/images/Rectangle 4786.png" alt="">
+                <div class="recommend-title">Recommend</div>
+              </div>
+
+              <div class="d-flex my-4">
+                <div class="card-body p-1 custom-main">
+                  <h6 class="card-subtitle mb-2 text-body-secondary ml-3 custom-features">Features</h6>
+                  <div class="d-flex">
+                    <img class="l-img mr-2" src="assets/images/correct-img.png" height="10" width="10">
+                    <h6 class="r-text">527- Day Care Procedures Covered.</h6>
+                  </div>
+                  <div class="d-flex">
+                    <img class="l-img mr-2" src="assets/images/correct-img.png" height="10" width="10">
+                    <h6 class="r-text">Organ Donor Expenses Covered.</h6>
+                  </div>
+                  <div class="d-flex">
+                    <img class="l-img mr-2" src="assets/images/correct-img.png" height="10" width="10">
+                    <h6 class="r-text">Pre & Post Hospitalisation Cover.</h6>
+                  </div>
+                  <div class="d-flex justify-content-between flex-column">
+                    <div href="#" class="view-More ml-3">view More Features</div>
+                    <div href="#" class="view-Wording ms-3">Policy Wording</div>
+                  </div>
+                  <!-- <a href="#" class="card-link">Another link</a> -->
+                </div>
+                <div class="d-flex flex-column">
+                  <div class="card-body p-1 custom-main">
+                    <h6 class="card-subtitle mb-2 text-body-secondary ms-2 custom-features text-center">Premium</h6>
+                    <div class="Premium-interface text-end">
+                      <img src="assets/images/Rectangle 4792.png" alt="">
+                      <div class="custom-premium">₹500/-</div>
+                    </div>
+                  </div>
+                  <div class="card-body p-1 alignment-top">
+                    <h6 class="card-subtitle mb-1 mt-1 text-body-secondary ms-2 custom-features text-center">Cover</h6>
+                    <div class="Premium-interface text-end">
+                      <img src="assets/images/Rectangle 4792.png" alt="">
+                      <div class="cover-value">₹2 Lac/-</div>
+                    </div>
+                  </div>
+                  <div class="card-body p-1">
+                    <!-- <h6 class="card-subtitle mb-2 text-body-secondary ms-2 custom-features text-center">Cover</h6> -->
+                    <div class="Premium-interface text-end">
+                      <img src="assets/images/Group 2032.png" alt="">
+                      <!-- <div class="cover-value">₹2 Lac/-</div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 my-2">
+            <div class="card shadow-box my-3" style="width: 100%;">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <div class="head-text">
+                <img class="" src="assets/images/Rectangle 1380.png" alt="" style="width:116%">
+                <div class="head-title">Affinity Demo GHI</div>
+              </div>
+              <div class="start-img">
+                <img class="sm-rectangle" src="assets/images/Rectangle 4833.png" alt="">
+                <img class="patient-img" src="assets/images/patient 2.png" alt=""
+                  style="transform: translate(-50%, -50%);">
+              </div>
+              <div class="recommend-text">
+                <img src="assets/images/Rectangle 4786.png" alt="">
+                <div class="recommend-title">Recommend</div>
+              </div>
+
+              <div class="d-flex my-4">
+                <div class="card-body p-1 custom-main">
+                  <h6 class="card-subtitle mb-2 text-body-secondary ml-3 custom-features">Features</h6>
+                  <div class="d-flex">
+                    <img class="l-img mr-2" src="assets/images/correct-img.png" height="10" width="10">
+                    <h6 class="r-text">527- Day Care Procedures Covered.</h6>
+                  </div>
+                  <div class="d-flex">
+                    <img class="l-img mr-2" src="assets/images/correct-img.png" height="10" width="10">
+                    <h6 class="r-text">Organ Donor Expenses Covered.</h6>
+                  </div>
+                  <div class="d-flex">
+                    <img class="l-img mr-2" src="assets/images/correct-img.png" height="10" width="10">
+                    <h6 class="r-text">Pre & Post Hospitalisation Cover.</h6>
+                  </div>
+                  <div class="d-flex justify-content-between flex-column">
+                    <div href="#" class="view-More ml-3">view More Features</div>
+                    <div href="#" class="view-Wording ms-3">Policy Wording</div>
+                  </div>
+                  <!-- <a href="#" class="card-link">Another link</a> -->
+                </div>
+                <div class="d-flex flex-column">
+                  <div class="card-body p-1 custom-main">
+                    <h6 class="card-subtitle mb-2 text-body-secondary ms-2 custom-features text-center">Premium</h6>
+                    <div class="Premium-interface text-end">
+                      <img src="assets/images/Rectangle 4792.png" alt="">
+                      <div class="custom-premium">₹500/-</div>
+                    </div>
+                  </div>
+                  <div class="card-body p-1 alignment-top">
+                    <h6 class="card-subtitle mb-1 mt-1 text-body-secondary ms-2 custom-features text-center">Cover</h6>
+                    <div class="Premium-interface text-end">
+                      <img src="assets/images/Rectangle 4792.png" alt="">
+                      <div class="cover-value">₹2 Lac/-</div>
+                    </div>
+                  </div>
+                  <div class="card-body p-1">
+                    <!-- <h6 class="card-subtitle mb-2 text-body-secondary ms-2 custom-features text-center">Cover</h6> -->
+                    <div class="Premium-interface text-end">
+                      <img src="assets/images/Group 2032.png" alt="">
+                      <!-- <div class="cover-value">₹2 Lac/-</div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 my-2">
+            <div class="card shadow-box my-3" style="width: 100%;">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <div class="head-text">
+                <img class="" src="assets/images/Rectangle 1380.png" alt="" style="width:116%">
+                <div class="head-title">Affinity Demo GHI</div>
+              </div>
+              <div class="start-img">
+                <img class="sm-rectangle" src="assets/images/Rectangle 4833.png" alt="">
+                <img class="patient-img" src="assets/images/patient 2.png" alt=""
+                  style="transform: translate(-50%, -50%);">
+              </div>
+              <div class="recommend-text">
+                <img src="assets/images/Rectangle 4786.png" alt="">
+                <div class="recommend-title">Recommend</div>
+              </div>
+
+              <div class="d-flex my-4">
+                <div class="card-body p-1 custom-main">
+                  <h6 class="card-subtitle mb-2 text-body-secondary ml-3 custom-features">Features</h6>
+                  <div class="d-flex">
+                    <img class="l-img mr-2" src="assets/images/correct-img.png" height="10" width="10">
+                    <h6 class="r-text">527- Day Care Procedures Covered.</h6>
+                  </div>
+                  <div class="d-flex">
+                    <img class="l-img mr-2" src="assets/images/correct-img.png" height="10" width="10">
+                    <h6 class="r-text">Organ Donor Expenses Covered.</h6>
+                  </div>
+                  <div class="d-flex">
+                    <img class="l-img mr-2" src="assets/images/correct-img.png" height="10" width="10">
+                    <h6 class="r-text">Pre & Post Hospitalisation Cover.</h6>
+                  </div>
+                  <div class="d-flex justify-content-between flex-column">
+                    <div href="#" class="view-More ml-3">view More Features</div>
+                    <div href="#" class="view-Wording ms-3">Policy Wording</div>
+                  </div>
+                  <!-- <a href="#" class="card-link">Another link</a> -->
+                </div>
+                <div class="d-flex flex-column">
+                  <div class="card-body p-1 custom-main">
+                    <h6 class="card-subtitle mb-2 text-body-secondary ms-2 custom-features text-center">Premium</h6>
+                    <div class="Premium-interface text-end">
+                      <img src="assets/images/Rectangle 4792.png" alt="">
+                      <div class="custom-premium">₹500/-</div>
+                    </div>
+                  </div>
+                  <div class="card-body p-1 alignment-top">
+                    <h6 class="card-subtitle mb-1 mt-1 text-body-secondary ms-2 custom-features text-center">Cover</h6>
+                    <div class="Premium-interface text-end">
+                      <img src="assets/images/Rectangle 4792.png" alt="">
+                      <div class="cover-value">₹2 Lac/-</div>
+                    </div>
+                  </div>
+                  <div class="card-body p-1">
+                    <!-- <h6 class="card-subtitle mb-2 text-body-secondary ms-2 custom-features text-center">Cover</h6> -->
+                    <div class="Premium-interface text-end">
+                      <img src="assets/images/Group 2032.png" alt="">
+                      <!-- <div class="cover-value">₹2 Lac/-</div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 col-12 custom-side-view">
+        <div class="col-lg-12 col-md-12">
+          <div class="d-flex w-100 rounded-custom justify-content-center align-items-center my-3"
+            style="background: linear-gradient(112.75deg, #005E92 2.53%, rgba(0, 74, 115, 0.9) 68.41%, rgba(0, 86, 134, 0.81) 98.01%);">
+            <div class="p-2 my-5 text-white d-flex justify-content-center align-items-center">All Rounder Health
+              insurance covers, by Exclusively for you</div>
+
+            <img class="my-3 custom-image-size d-flex justify-content-center align-items-center"
+              src="assets\images\removal 1.png" alt="">
+
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 my-2">
+          <div class="d-flex w-100 rounded-custom align-items-center flex-column justify-content-between"
+            style="border: 1px solid #969696; height:55%">
+            <div class="p-2 text-black d-flex align-items-center text-center">Help</div>
+            <div class="p-2 text-black d-flex align-items-center text-center">All Rounder Health insurance covers, by
+              Exclusively for you</div>
+
+            <img class="custom-image-size d-flex align-items-center" src="assets\images\13184991.png" alt="">
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
             </div>
         </div>
