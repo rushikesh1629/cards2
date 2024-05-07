@@ -1,360 +1,497 @@
-@media (min-width: 1200px) {
-    .container {
+    @media (min-width: 1200px) {
+      .container {
         max-width: 1288px;
+      }
     }
-}
 
-.head-text {
-    position: relative;
-    text-align: center;
-    color: white;
-    /* width: 91%;
-right: 3%; */
-    width: 91%;
-    right: 3%;
-    top: 2%;
-}
-
-.shadow-box{
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    border-radius: 15px;
-}
-
-.head-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 1rem;
-    width: 100%;
-}
-
-.start-img {
-    position: relative;
-    text-align: center;
-    color: white;
-    width: 91%;
-    right: 37%;
-    top: -45px;
-}
-
-.patient-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    /* transform: translate(-50%, -50%); */
-}
-
-.recommend-text {
-    position: absolute;
-    text-align: center;
-    color: white;
-    /* width: 91%;
-right: 36.4%; */
-    top: 61px;
-}
-
-.recommend-title {
-    position: absolute;
-    top: 50%;
-    left: 42%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 0.8rem;
-    width: 100%;
-}
-
-.custom-features {
-    color: #007830 !important;
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 21px;
-}
-
-.custom-main {
-    position: relative;
-    top: -10px;
-}
-
-.view-More {
-    font-family: Poppins;
-    font-size: 10px;
-    font-weight: 500;
-    line-height: 15px;
-    text-align: center;
-    color: #007830;
-    display: flex;
-}
-
-.view-Wording {
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 21px;
-    text-align: center;
-    display: flex;
-    color: #007830;
-    position: relative;
-    top: 25px;
-}
-
-.Premium-interface {
-    position: relative;
-    text-align: center;
-    color: white;
-    /* width: 91%; */
-}
-
-.custom-premium {
-    position: absolute;
-    top: 50%;
-    left: 57%;
-    transform: translate(-50%, -50%);
-}
-
-.cover-value {
-    position: absolute;
-    top: 0;
-    left: 19%;
-}
-
-.alignment-top {
-    position: relative;
-    bottom: 20px;
-}
-
-.r-text,
-.text-edit {
-    font-family: "Roboto", sans-serif;
-    text-align: left;
-}
-
-.rounded-custom {
-    border-radius: 20px;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    overflow-x: auto;
-}
-
-.r-text,
-.text-edit {
-    font-family: "Roboto", sans-serif;
-    text-align: left;
-}
-
-.text-edit {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 18px;
-    display: flex;
-    margin-bottom: 2px;
-}
-
-.r-text {
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.15000000596046448px;
-}
-
-.custom-features {
-    color: #007830 !important;
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 21px;
-}
-
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 10rem;
-    padding: .5rem 0;
-    margin: .125rem 0 0;
-    font-size: 1rem;
-    color: #080808;
-    text-align: left;
-    list-style: none;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, .15);
-    border-radius: .25rem;
-}
-
-.cuatom-sdow {
-    box-shadow: none !important;
-    border: none !important;
-    padding: 0 5px !important;
-    font-family: Poppins;
-    font-size: 12px !important;
-    font-weight: 500;
-    line-height: 18px;
-    text-align: center;
-    display: flex !important;
-}
-
-
-.card-filter {
-    border: 1px solid #ccc;
-    padding: 5px;
-    text-align: center;
-    background-color: #f9f9f9;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    /* Card background color */
-}
-
-.card-filter:nth-child(1) {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-.card-filter:nth-child(5) {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-@media (max-width:1024px) {
-    .my-4 {
-        margin-top: 1.5rem !important;
+    .head-text {
+      position: relative;
+      text-align: center;
+      color: white;
+      /* width: 91%;
+      right: 3%; */
+      width: 91%;
+      right: 3%;
+      top: 2%;
     }
-}
 
-.card {
-    height: 100%;
-}
+    .head-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 1rem;
+      width: 100%;
+    }
 
-@media (max-width:1024px) and (min-width:992px) {
     .start-img {
-        top: -33px;
-    }
-}
-
-@media (max-width:991px) and (min-width:768px) {
-    .start-img {
-        top: -38px;
-    }
-}
-
-@media (max-width:767px) {
-    .start-img {
-        top: -48px;
-    }
-}
-
-@media (max-width:452px) {
-    .start-img {
-        top: -42px;
-    }
-}
-
-@media (max-width:392px) {
-    .start-img {
-        top: -36px;
-    }
-
-    .sm-rectangle {
-        height: 44px;
-    }
-}
-
-@media (max-width:340px) {
-    .start-img {
-        top: -32px;
-    }
-
-    .sm-rectangle {
-        height: 39px;
+      position: relative;
+      text-align: center;
+      color: white;
+      width: 91%;
+      right: 37%;
+      top: -45px;
     }
 
     .patient-img {
-        height: 30px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      .
+      /* transform: translate(-50%, -50%); */
     }
-}
 
-@media (max-width:1024px) and (min-width:992px) {
+    .recommend-text {
+      position: absolute;
+      text-align: center;
+      color: white;
+      /* width: 91%;
+      right: 36.4%; */
+      top: 61px;
+    }
+
+    .recommend-title {
+      position: absolute;
+      top: 50%;
+      left: 42%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 0.8rem;
+      width: 100%;
+    }
+
+    .custom-features {
+      color: #007830 !important;
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+    }
+
+    .custom-main {
+      position: relative;
+      top: -10px;
+    }
+
+    .view-More {
+      font-family: Poppins;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 15px;
+      text-align: center;
+      color: #007830;
+      display: flex;
+    }
 
     .view-Wording {
-        top: 10px;
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      text-align: center;
+      display: flex;
+      color: #007830;
+      position: relative;
+      top: 25px;
     }
 
-    .sm-rectangle {
-        height: 44px;
+    .Premium-interface {
+      position: relative;
+      text-align: center;
+      color: white;
+      /* width: 91%; */
     }
-}
 
-@media (max-width:347px) {
-
-    .view-Wording {
-        top: 10px;
+    .custom-premium {
+      position: absolute;
+      top: 50%;
+      left: 57%;
+      transform: translate(-50%, -50%);
     }
-}
 
-
-@media (min-width:280px) {
-    .card {
-        height: 88%;
+    .cover-value {
+      position: absolute;
+      top: 0;
+      left: 19%;
     }
-}
 
+    .alignment-top {
+      position: relative;
+      bottom: 20px;
+    }
 
-@media (max-width: 425px) {
+    .r-text,
+    .text-edit {
+      font-family: "Roboto", sans-serif;
+      text-align: left;
+    }
+
+    .rounded-custom {
+      border-radius: 20px;
+    }
+
     .grid-container {
-        grid-template-columns: repeat(5, minmax(150px, 1fr));
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      overflow-x: auto;
     }
-}
 
-@media (max-width:767px) {
-    .custom-image-size {
+
+    .card-filter {
+      border: 1px solid #ccc;
+      padding: 5px;
+      text-align: center;
+      background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      /* Card background color */
+    }
+
+    .card-filter:nth-child(1) {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    .card-filter:nth-child(4) {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    @media (max-width:1024px) {
+      .my-4 {
+        margin-top: 1.5rem !important;
+      }
+    }
+
+    .card {
+      height: 100%;
+    }
+
+    @media (max-width:1024px) and (min-width:992px) {
+      .start-img {
+        top: -33px;
+      }
+    }
+
+    @media (max-width:991px) and (min-width:768px) {
+      .start-img {
+        top: -38px;
+      }
+    }
+
+    @media (max-width:767px) {
+      .start-img {
+        top: -48px;
+      }
+    }
+
+    @media (max-width:452px) {
+      .start-img {
+        top: -42px;
+      }
+    }
+
+    @media (max-width:392px) {
+      .start-img {
+        top: -36px;
+      }
+
+      .sm-rectangle {
+        height: 44px;
+      }
+    }
+
+    @media (max-width:340px) {
+      .start-img {
+        top: -32px;
+      }
+
+      .sm-rectangle {
+        height: 39px;
+      }
+
+      .patient-img {
+        height: 30px;
+      }
+    }
+
+    @media (max-width:1024px) and (min-width:992px) {
+
+      .view-Wording {
+        top: 10px;
+      }
+
+      .sm-rectangle {
+        height: 44px;
+      }
+    }
+
+    @media (max-width:347px) {
+
+      .view-Wording {
+        top: 10px;
+      }
+    }
+
+
+    @media (min-width:280px) {
+      .card {
+        height: 88%;
+      }
+    }
+
+
+    @media (max-width: 425px) {
+      .grid-container {
+        grid-template-columns: repeat(4, minmax(150px, 1fr));
+      }
+    }
+
+    @media (max-width:767px) {
+      .custom-image-size {
         position: relative;
         width: 130px;
         height: 127px;
+      }
     }
-}
 
-@media (max-width:375px) {
-    .custom-image-size {
+    @media (max-width:375px) {
+      .custom-image-size {
         position: relative;
         width: 130px;
         height: 127px;
         margin-top: 23px !important;
+      }
     }
-}
 
-@media (max-width:320px) {
-    .custom-image-size {
+    @media (max-width:320px) {
+      .custom-image-size {
         position: relative;
         width: 96px;
         height: 100px;
         margin-top: 42px !important;
+      }
     }
-}
 
-@media (min-width:992px) and (max-width:1024px) {
-    .custom-image-size {
+    @media (min-width:992px) and (max-width:1024px) {
+      .custom-image-size {
         position: relative;
         width: 100%;
         height: 139px;
         /* margin-top: 45px !important; */
+      }
     }
-}
 
-@media (min-width:769px) and (max-width:991px) {
-    .custom-image-size {
+    @media (min-width:769px) and (max-width:991px) {
+      .custom-image-size {
         position: relative;
         /* width: 100%;
-height: 139px; */
+      height: 139px; */
         /* margin-top: 45px !important; */
+      }
     }
-}
+
+    /* edit modal start */
+
+    .field_container {
+      background-color: #fff;
+      height: 48px;
+      box-shadow: none;
+      border-radius: 8px;
+      font-size: 14px;
+      color: #253858;
+      position: relative;
+      border: 1px solid #97a0af;
+      width: calc(60% - 10px);
+      margin-right: 10px;
+      padding: 13px;
+    }
+
+    .checkbox-family label {
+      position: relative;
+      /* height: 50px;
+      width: 100%; */
+      cursor: pointer;
+    }
+
+    .box-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .box_family {
+      width: 40%;
+      position: relative;
+    }
+
+    .box_family select {
+      border-radius: 8px;
+      height: 48px;
+      padding: 13px;
+    }
+
+    .kids {
+      width: 100%;
+    }
+
+    .checklist_son {
+      position: absolute;
+      right: 0;
+      top: 145px;
+      padding-top: 12px;
+      width: 115px;
+      height: 48px;
+      display: flex;
+    }
+
+    .radio_kids label {
+      margin: 0 2px 9px;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .radio_kids .circle_kids {
+      background: #fff;
+      border-radius: 40px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+      display: inline-block;
+      align-items: center;
+      border: 1px solid #5e6c84;
+      font-style: normal;
+      font-size: 18px;
+      color: #5e6c84;
+      width: 24px;
+      height: 24px;
+      line-height: 21px;
+      text-align: center;
+    }
+
+    .checklist_son .input_kid {
+      border: 1px solid #5e6c84;
+      color: #5e6c84;
+      width: 29%;
+      height: max-content;
+      text-align: center;
+      border-radius: 4px;
+    }
+
+    .radio_kids .click_add_2 {
+      /* margin-left: 48px !important; */
+    }
+
+    .radio_kids .circle_kids {
+      background: #fff;
+      border-radius: 40px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+      display: inline-block;
+      align-items: center;
+      border: 1px solid #5e6c84;
+      font-style: normal;
+      font-size: 18px;
+      color: #5e6c84;
+      width: 24px;
+      height: 24px;
+      line-height: 21px;
+      text-align: center;
+    }
+
+    .kids_box-container {
+      display: flex;
+      margin: 10px 10px 0;
+      height: 48px;
+    }
+
+    .relationship_dd {
+      width: calc(70% - 10px);
+      margin-right: 10px;
+    }
+
+    .box_family select {
+      width: 100%;
+    }
+
+    /* edit modal end */
+
+    /* cover plan start */
+
+    .multi_text {
+      font-size: 1rem;
+      font-family: "poppins";
+      font-weight: 600;
+      line-height: 3.5;
+
+    }
+
+    /* cover plan end */
+
+    /* cover plan dropdown start */
+
+    input:hover {
+      box-shadow: none !important;
+    }
+
+    label {
+      margin-bottom: 0;
+    }
+
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+    }
+
+    /* Remove extra left and right margins, due to padding */
+    .row {
+      margin: 0 -5px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+
+
+
+    .custom-card-cover {
+      border-radius: 10px;
+      border: 1px solid grey;
+      box-shadow: none;
+      height: 75%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+
+    #html {
+      width: 16px;
+      height: 33px;
+    }
+
+    hr {
+      margin: 0.8rem 0;
+    }
+
+    .cover-button{
+      height: max-content;
+    }
+
+    .shadow-box{
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
